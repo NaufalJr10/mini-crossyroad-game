@@ -18,7 +18,6 @@ class CarManager:
 
         if random_chance == 1:
             new_car = Turtle(shape="square")
-            new_car.speed(1)
             new_car.shapesize(stretch_wid=1, stretch_len=2)
             new_car.penup()
             new_car.color(random.choice(COLORS))
@@ -32,7 +31,7 @@ class CarManager:
 
     def increase_speed(self):
         for each_car in self.list_of_cars:
-            self.car_speed += MOVE_INCREMENT
+            self.car_speed += 0.25
 
 
 
